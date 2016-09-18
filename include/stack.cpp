@@ -16,7 +16,7 @@ inline stack<T>::~stack()
 template <typename T> 
 inline stack<T>::stack() :count_(0), array_size_(0), array_(nullptr) {};
 
-template <typename T> 
+template <typename T>
 inline auto stack<T>::push(T const &com)->void {
 		if (count_ == array_size_) {
 			array_size_ *= 2;
