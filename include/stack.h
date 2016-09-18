@@ -21,3 +21,4 @@ private:
 	size_t array_size_;
 	size_t count_;
 };
+ 
