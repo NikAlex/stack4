@@ -12,10 +12,9 @@ public:
 	auto count() const noexcept->size_t;
 	auto push(T const &)->void;
 	auto pop()->T;
-	auto top() const->T&;
+	auto empty()->bool;
 	~stack();
 	auto operator=(const stack&tmp)->stack&;
-	auto print()->void;
 private:
 	T * array_;
 	size_t array_size_;
