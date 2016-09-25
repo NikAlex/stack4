@@ -7,6 +7,12 @@ auto mem_copy(size_t count_m, size_t array_size_m, const T * tmp)->T* {
 	return mass; 
 }
 
+template<typename T>
+inline auto stack<T>::empty()->bool { 
+	if (this->count()) { return false; }
+	else { return true; }
+}
+
 template <typename T> 
 inline stack<T>::~stack()
 {
