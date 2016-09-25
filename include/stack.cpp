@@ -62,8 +62,4 @@ inline auto stack<T>::pop()->T {
 	return --count_;
 }
 
-template <typename T> 
-inline auto stack<T>::top() const->T& {
-	if (count_ == 0) throw logic_error("Empty!");
-	return array_[count_];
-}
+
