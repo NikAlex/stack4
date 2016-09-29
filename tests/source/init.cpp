@@ -31,14 +31,6 @@ SCENARIO("const", "[constr]"){
  }
 
 
-SCENARIO("copy", "[copy]"){
-  stack<int> s;
-  s.push(1);
-  stack<int> s2=s;
-  REQUIRE(s2.count()==1);
-  REQUIRE(s2.pop()==1);
-}
-
 SCENARIO("empty", "[empty]"){
   stack<int> s1;
   s1.push(1);
