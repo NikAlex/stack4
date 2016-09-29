@@ -25,7 +25,7 @@ SCENARIO("operprisv", "[operprisv]"){
 }
 
 SCENARIO("copy", "[copy]"){
-    Stack<int> s1;
+    stack<int> s1;
     s1.push(3);
     stack<int> s2(s);
     REQUIRE(s2.count() == 1);
