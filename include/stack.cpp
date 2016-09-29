@@ -14,8 +14,7 @@ inline auto stack<T>::empty()->bool {
 }
 
 template <typename T> 
-inline stack<T>::~stack()
-{
+inline stack<T>::~stack() {
 	delete[] array_;
 }
 
