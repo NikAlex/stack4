@@ -23,6 +23,15 @@ SCENARIO("operprisv", "[operprisv]"){
   s2=s1;
   REQUIRE(s1.count()==s2.count());
 }
+
+SCENARIO("copy", "[copy]"){
+    Stack<int> s;
+    s.push(3);
+    Stack<int> s2(s);
+    REQUIRE(s2.count() == 1);
+    REQUIRE(s2.pop() == 3);
+}
+
 SCENARIO("const", "[constr]"){
   stack<int> s1;
   s1.push(1);
