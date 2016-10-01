@@ -64,4 +64,5 @@ inline auto stack<T>::pop() -> T {
 template <typename T>
 inline auto stack<T>::top() const->T& {
 	if (count_ == 0) throw std::logic_error("Empty stack");
-	return ptr_[count_];
+	return array_[count_];
+}
