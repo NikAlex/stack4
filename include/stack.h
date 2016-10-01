@@ -12,6 +12,7 @@ public:
 	auto count() const noexcept->size_t;/*noexcept*/
 	auto push(T const &)->void;/*strong*/
 	auto pop()->T;/*strong*/
+	auto top() const->T&;/*strong*/
 	auto empty()->bool;/*noexcept*/
 	~stack();/*noexcept*/
 	auto operator=(const stack&tmp)->stack&;/*strong*/
