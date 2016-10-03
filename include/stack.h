@@ -13,6 +13,7 @@ public:
 	auto push(T const &)->void;//strong
 	auto pop()->T;//basic
 	~stack();//noexcept
+	auto top() const->T&;/*strong*/
 	auto operator=(const stack&tmp)->stack&;//strong
 private:
 	T * array_;
