@@ -1,4 +1,4 @@
-#include "stack.cpp"
+/*#include "stack.cpp"
 #include <catch.hpp>
 #include <iostream>
 using namespace std;
@@ -68,3 +68,4 @@ SCENARIO("empty3", "[empty3]"){
   
   REQUIRE(s1.empty()==false);
 }
+*/
