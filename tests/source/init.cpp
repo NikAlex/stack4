@@ -15,6 +15,7 @@ SCENARIO("top", "[top]"){
   s.push(2);
   s.push(3);
   s.pop();
+}
   
 SCENARIO("push", "[push]"){
   stack<int> s;
