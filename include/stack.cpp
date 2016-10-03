@@ -13,6 +13,11 @@ inline stack<T>::~stack() {
 	delete[] array_;
 }
 
+template<typename T>
+inline auto stack<T>::empty()->bool {
+	return (count_ == 0);
+}
+
 template <typename T> 
 inline stack<T>::stack() :count_(0), array_size_(0), array_(nullptr) {};
 
