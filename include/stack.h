@@ -11,7 +11,7 @@ public:
 	stack(const stack&);//strong
 	auto count() const noexcept->size_t;//noexcept
 	auto push(T const &)->void;//strong
-	auto pop()->T;//basic
+	auto pop()->T;//strong
 	~stack();//noexcept
 	auto top() const->T&;/*strong*/
 	auto operator=(const stack&tmp)->stack&;//strong
