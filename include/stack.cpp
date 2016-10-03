@@ -54,3 +54,10 @@ inline auto stack<T>::pop() -> T {
 	if (count_ == 0) throw std::logic_error("Empty stack");
 	return array_[--count_];
 }
+
+template <typename T>//удаление элемента
+inline auto stack<T>::top() const->T& {
+	if (count_ == 0) throw std::logic_error("Empty stack!");
+	return array_[count_];
+
+}
