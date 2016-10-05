@@ -45,6 +45,3 @@ SCENARIO("const", "[constr]"){
   stack<int> s2=s1;
   REQUIRE(s1.count()==s2.count());
  }
-
-
-
