@@ -51,7 +51,7 @@ template<typename T>
 inline auto stack<T>::pop()->T {
 	if (count_ == 0) throw std::logic_error("Empty!");
 	--count_;
-	return ptr_[count_];
+	return array_[count_];
 }
 
 
