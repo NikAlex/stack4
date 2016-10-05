@@ -14,7 +14,6 @@ SCENARIO("top", "[top]"){
   s.push(1);
   s.push(2);
   s.push(3);
-  REQUIRE(s.top()==3);
 }
   
 SCENARIO("push", "[push]"){
