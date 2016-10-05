@@ -7,15 +7,9 @@ auto mem_copy(size_t count_m, size_t array_size_m, const T * tmp)->T* {
 	return mass; 
 }
 
-
 template <typename T> 
 inline stack<T>::~stack() {
 	delete[] array_;
-}
-
-template<typename T>
-inline auto stack<T>::empty()->bool {
-	return (count_ == 0);
 }
 
 template <typename T> 
@@ -30,7 +24,6 @@ inline auto stack<T>::push(T const &com)->void {
 			array_ = tmp;
 			array_size_=size;
 		}
-		
 		array_[count_] = com;
 		count_++;
 	}
@@ -60,9 +53,4 @@ inline auto stack<T>::pop() -> T {
 	return array_[--count_];
 }
 
-template <typename T>//удаление элемента
-inline auto stack<T>::top() const->T& {
-	if (count_ == 0) throw std::logic_error("Empty stack!");
-	return array_[count_];
 
-}
