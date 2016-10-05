@@ -11,6 +11,7 @@ public:
 	stack(const stack&); //strong
 	auto count() const noexcept->size_t; //noexcept
 	auto push(T const &)->void; //strong
+	auto empty()->bool; //noexcept
 	auto pop()->T; //strong
 	auto top() const->T&; //strong
 	~stack(); //noexcept
