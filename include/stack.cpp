@@ -28,17 +28,8 @@ inline auto stack<T>::push(T const &com)->void {
 		count_++;
 	}
 
-//template <typename T> 
-//inline stack<T>::stack(const stack&tmp)	:count_(tmp.count_), array_size_(tmp.array_size_), array_(mem_copy(tmp.count_, tmp.array_size_, tmp.array_))	{}
-
-
-template<typename T>
-auto stack<T>::swap(stack & tmp) -> void {
-	std::swap(tmp.array_size_, array_size_);
-	std::swap(tmp.array_, array_);
-	std::swap(tmp.count_, count_);
-}
-
+template <typename T> 
+inline stack<T>::stack(const stack&tmp)	:count_(tmp.count_), array_size_(tmp.array_size_), array_(mem_copy(tmp.count_, tmp.array_size_, tmp.array_))	{}
 
 template <typename T>  
 inline auto stack<T>::operator=(const stack&tmp)->stack& {
