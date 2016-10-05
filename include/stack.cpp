@@ -1,5 +1,10 @@
 #include "stack.h"
 
+template<typename T> 
+inline auto stack<T>::empty()->bool {
+	return (allocator<T>::count_ == 0);
+}
+
 template <typename T>
 auto mem_copy(size_t count_m, size_t array_size_m, const T * tmp)->T* {
 	T *mass = new T[array_size_m]; 
