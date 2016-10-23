@@ -2,7 +2,8 @@
 
 template<typename T> 
 inline auto stack<T>::empty()->bool {
-	return (count_ == 0);
+	if (this->count()) { return false; } 
+	else { return true; }
 }
 
 template <typename T>
