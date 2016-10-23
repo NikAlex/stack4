@@ -2,7 +2,7 @@
 
 template<typename T> 
 inline auto stack<T>::empty()->bool {
-	 return true; 
+	 return (count_ == 0); 
 }
 
 template <typename T>
