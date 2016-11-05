@@ -1,4 +1,4 @@
-ж#include <iostream>
+#include <iostream>
 #include <stdexcept>
 
 
