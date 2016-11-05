@@ -1,4 +1,4 @@
-#include <iostream>
+ж#include <iostream>
 #include <stdexcept>
 
 
@@ -14,7 +14,7 @@ protected:
 	T * ptr_;
 	size_t size_;
 	size_t count_;
-}
+};
 
 template <typename T1, typename T2>
 auto construct(T1 * ptr, T2 const & value)->void {
