@@ -100,8 +100,10 @@ auto stack<T>::push(T const &val)->void {
 
 template <typename T>
 stack<T>::stack(stack const &tmp): allocator<T>(tmp.size_){
-	for (size_t i = 0; i < tmp.count_; i++) construct(allocator<T>::ptr_ + i, tmp.ptr_[i]);
-	allocator<T>::count_ = tmp.count_;
+	for (size_t i = 0; i < tmp.count_; i++) {
+		construct(allocator<T>::ptr_ + i, tmp.ptr_[i]);
+		allocator<T>::count_++;
+	}
 };
 
 template <typename T>
