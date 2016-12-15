@@ -26,7 +26,7 @@ private:
 	size_t counter_;
 };
 
-bitset::bitset(size_t size) : ptr_(std::make_unique<bool[]>(size)), size_(size), counter_(0){}
+bitset::bitset(size_t size) : ptr_(std::make_unique<bool[]>(size)), size_(size), counter_(0){} 
 
 auto bitset::set(size_t index)->void {
 	if (index >= 0 && index < size_) { ptr_[index] = true; ++counter_; }
